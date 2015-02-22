@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>
+    mahadev
+    </title>
+    <script src="jquery.js" type="text/javascript">
+    </script>
+<script>
+    $(function(){
+        //$("#mybutton").click(function(){
+            
+        $("div").hide(500).show(500).hide(1000).show(1000);
+          $('h1').fadeOut(1000).fadeIn(1000);  
+
+          $("div").css({
+          'backgroundColor':'RED',
+              'border':'2px solid green'
+              
+              
+          });
+          
+
+$("#mydiv").click(function(){
+
+    alert("Yes this is working")
+
+});
+        
+        
+        $("#mybutton").click(function(){
+            $("#mydiv h1").fadeOut(2000).fadeIn(2000);
+        });
+
+            
+        //});
+                
+    });
+    $(function(){
+        $(".myclass").fadeOut(2000).fadeIn(2000);
+    });
+    </script>    
+    
+    
+</head>
+    <body>
+    <div id="mydiv">
+        <h1>mahadev Vyavahare</h1>
+        </div>
+        <input type="button" id="mybutton" value="click here">
+    <div class="myclass">
+        Mahaddev Vyavahare class second
+    </div>
+    </body>
+
+</html>
